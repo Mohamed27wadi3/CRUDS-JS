@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CRUDS.css">
-    <script src="CRUDS.js"></script>
+    
     <title>Projet_CRUDS</title>
 </head>
 <body>
+   
 
 <div class="crud">
 <div class="head">
@@ -16,14 +17,14 @@
 </div>
 
 <div class="inputs">
- <input type="text" id="text" placeholder="Title">
+ <input type="text" id="title" placeholder="Title">
 
     <div class="price">
-<input type="number" id="price" placeholder="price">
-<input type="number" id="taxes" placeholder="taxes">
-<input type="number" id="ads" placeholder="ads">
-<input type="number" id="discount" placeholder="discount">
-<small id="total">21444</small>
+<input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+<input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+<input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+<input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+<small id="total"></small>
      </div>
 <input type="number" id="count" placeholder="count">
 <input type="text" id="category" placeholder="category">
@@ -59,28 +60,36 @@
         <td>SAMSUNG</td>
         <td>2000</td>
         <td>100</td>
-        <td>100</td>
-        <td>190</td>
         <td>2100</td>
         <td>phone</td>
-        <td><button id="update">update</button></td>
-        <td><button id="delete">delete</button></td>
+        <td><button id="update" style="background-color : blue">update</button></td>
+        <td><button id="delete" style="background-color: red;">delete</button></td>
 
        </tr>
-       
        <tr>
         <td>1</td>
         <td>SAMSUNG</td>
         <td>2000</td>
         <td>100</td>
-        <td>100</td>
-        <td>190</td>
         <td>2100</td>
         <td>phone</td>
-        <td><button id="update">update</button></td>
-        <td><button id="delete">delete</button></td>
+        <td><button id="update" style="background-color : blue">update</button></td>
+        <td><button id="delete" style="background-color: red;">delete</button></td>
+
        </tr>
-      
+       <tr>
+        <td>1</td>
+        <td>SAMSUNG</td>
+        <td>2000</td>
+        <td>100</td>
+        <td>2100</td>
+        <td>phone</td>
+        <td><button id="update" style="background-color : blue">update</button></td>
+        <td><button id="delete" style="background-color: red;">delete</button></td>
+
+       </tr>
+
+    
     </tbody>
 
 
@@ -89,17 +98,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
@@ -114,6 +112,6 @@
 
 
 
-    
+<script src="CRUDS.js"></script>
 </body>
 </html>
