@@ -76,6 +76,9 @@ justify-content: space-between;
     width: 45%;
    
 }
+#deleteALL{
+margin: 20px 0 ;
+}
 
 table{
     width: 100%;
@@ -91,3 +94,6 @@ th,td{
     padding: 5px;
 }
 
+#update {
+    color: blue;
+}
